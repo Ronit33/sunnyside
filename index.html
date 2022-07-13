@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,600&family=Fraunces:ital,opsz,wght@0,9..144,800;1,9..144,700&display=swap"
+        rel="stylesheet">
+        <script src="https://use.fontawesome.com/a780552e92.js"></script>
+
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header>
+        <nav>
+            <h1><a href="index.html">sunnyside</a></h1>
+            <ul class="mobile-nav">
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Services</li>
+                </a>
+                <a href="#">
+                    <li>Projects</li>
+                </a>
+                <a href="#">
+                    <li class="contact-nav">CONTACT</li>
+                </a>
+            </ul>
+            <div class="menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></div>
+        </nav>
+        <div class="header-content">
+            <h1>WE ARE CREATIVE</h1>
+            <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M18 3v100M3 95.484l15 15 15-15" />
+                </g>
+            </svg>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+
+    <section class="content">
+        <section class="content-text inverse-text">
+            <div>
+                <h1>Transform your brand</h1>
+                <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
+                    through compelling visuals that do most of the marketing for you.</p>
+                <a href="#">LEARN MORE</a>
+            </div>
+
+        </section>
+        <section class="inverse-img">
+            <img src="./images/desktop/image-transform.jpg" alt="">
+        </section>
+        <section>
+            <img src="./images/desktop/image-stand-out.jpg" alt="">
+        </section>
+        <section class="content-text">
+            <div>
+                <h1>Stand out to the right audience</h1>
+                <p>Using a collborative formula of designers, researchers, photographers, videographers and copywriters,
+                    we'll build and extend your brand in digital places.</p>
+                <a href="#">LEARN MORE</a>
+            </div>
+
+        </section>
+        <section class="text-img-1">
+            <div class="text-img">
+                <h1>Graphic Design</h1>
+                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+                    potention client's attention.</p>
+            </div>
+
+        </section>
+        <section class="text-img-2">
+            <div class="text-img">
+                <h1>Photography</h1>
+                <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- CONTENT END -->
+
+
+
+
+
+
+
+    <!-- JS for nav -->
+    <script>
+        const navbar = document.querySelector('.mobile-nav');
+        const menu = document.querySelector('.menu');
+        let checkNav = false
+        menu.addEventListener('click',()=>{
+            if(navbar.style.display!=='flex'){
+                navbar.style.display = 'flex';
+            }
+            else{
+                navbar.style.display = 'none'
+            }
+            
+        })
+    </script>
+    
+</body>
+
+</html>
