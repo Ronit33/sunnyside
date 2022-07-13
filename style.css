@@ -85,7 +85,7 @@ li{
         right: 0;
         top: -20px;
     }
-    ul li{
+    nav ul li{
         color: #333;
         font-size: 1.5rem;
         padding: 0;
@@ -163,14 +163,32 @@ section img{
     font-size: 3rem;
 }
 .content-text a{
-        font-family: 'Fraunces', serif;
+    font-family: 'Fraunces', serif;
+    width: 120px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.text-1 a::before, .text-2 a::before{
+    content: '';
+    background-color: rgba(242, 205, 69, 0.5);
+    height: 10px;
+    position: absolute;
+    top: 65%;
+    right: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.text-2 a::before{
+    background-color: rgba(238, 130, 112, 0.5);
 }
 
 .content-text p{
     font-family: 'Barlow', 'serif';
-    color: #444;
+    font-weight: 400;
+    color: #777;
     font-size: 18px;
-    font-weight: 600;
 }
 
 .text-img-1{
@@ -208,7 +226,7 @@ section img{
     font-size: 16px;
 }
 .text-img-1 h1,.text-img-1 p{
-    color: rgb(61, 116, 105);
+    color: rgb(27, 95, 80);
 }
 .text-img-2 h1,.text-img-2 p{
     color: rgb(18, 59, 85);
@@ -325,4 +343,37 @@ section img{
     .img-grid{
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* Footer css*/
+
+footer{
+    background-color: rgb(110, 193, 176);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+
+}
+footer h1{
+    color: rgb(27, 95, 80);
+    font-family: 'Barlow', 'serif';
+    font-weight: 600;
+}
+footer ul a li{
+    color: rgb(27, 95, 80);
+    font-family: 'Barlow', 'serif';
+}
+
+.socials{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+@media (max-width: 780px) {
+    .socials{
+        width: 50%;
+    }
+    
 }
