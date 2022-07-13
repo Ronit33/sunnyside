@@ -1,4 +1,2 @@
 # Responsive landing page
--html
--css flex grid and basics
--js
+html, css flex grid and basics, js
