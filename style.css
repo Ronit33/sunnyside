@@ -109,7 +109,7 @@ li{
         padding-top: 15px;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
     .header-content{
         text-align: center;
         margin-top: 100px;
@@ -162,11 +162,15 @@ section img{
     font-weight: 800;
     font-size: 3rem;
 }
+.content-text a{
+        font-family: 'Fraunces', serif;
+}
 
 .content-text p{
     font-family: 'Barlow', 'serif';
     color: #444;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .text-img-1{
@@ -211,6 +215,11 @@ section img{
 }
 
 @media (max-width: 700px) {
+    .content-text div{
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
     .content{
         grid-template-columns: 1fr;
     }
@@ -221,19 +230,18 @@ section img{
         grid-row-start: 1;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 380px) {
 
     .content-text div{
-        width: 100%;
+        width: 90%;
         margin: 0;
-        text-align: center;
         gap: 1rem;
     }
     .content-text h1{
         font-size: 25px;
     }
     .text-img{
-        width: 100%;
+        width: 60%;
     }
     .text-img h1{
         font-size: 20px;
@@ -241,4 +249,66 @@ section img{
     .text-img p{
         font-size: 10px;
     }
+}
+
+ /* Testimonials css */
+
+ .testimonials{
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .testimonials h1{
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Fraunces', serif;
+    color: #999;
+ }
+ .client-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 70%;
+    width: 85%;
+    margin: 0 auto;
+    gap: 2rem;
+ }
+ .client img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.client h2{
+    font-family: 'Fraunces', serif;
+}
+.client-grid p{
+    color: #999;
+}
+
+@media (max-width: 700px) {
+    .testimonials h1{
+        margin-bottom: 50px;
+    }
+    .client-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 380px) {
+    .client-grid p{
+        font-size: 12px;
+    }
+    .testimonials h1{
+        font-size: 1.2rem;
+    }
+    
 }
